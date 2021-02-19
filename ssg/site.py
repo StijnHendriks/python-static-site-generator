@@ -3,6 +3,6 @@ from pathlib import Path
 class Site(object):
     """docstring for Site."""
 
-    def __init__(self, arg):
-        super(Site, self).__init__()
-        self.arg = arg
+    def __init__(self, source, dest):
+        self.source = Path(source)
+        self.dest = Path(dest)
