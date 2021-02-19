@@ -8,3 +8,6 @@ class Parser(object):
     def __init__(self, arg):
         super(Parser, self).__init__()
         self.arg = arg
+
+    def valid_extension(extension):
+        
