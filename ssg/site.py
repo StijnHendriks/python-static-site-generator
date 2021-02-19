@@ -27,6 +27,6 @@ class Site(object):
         parser = self.load_parser(path.suffix)
 
         if(parser is not None):
-            parser.parse()
+            parser.parse(path, path, path)
         else:
             raise NotImplementedError
