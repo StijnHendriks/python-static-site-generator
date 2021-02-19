@@ -9,4 +9,7 @@ class Site(object):
 
     def create_dir(self, path):
         directory = self.dest / path.relative_to(self.source)
-        directory.mkdir(parents=true, exist_ok=true)
+        directory.mkdir(parents=True, exist_ok=True)
+
+    def build():
+        self.dest.mkdir(parents=True, exist_ok=True)
