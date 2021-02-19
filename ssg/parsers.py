@@ -9,5 +9,5 @@ class Parser(object):
         super(Parser, self).__init__()
         self.arg = arg
 
-    def valid_extension(extension):
-        
+    def valid_extension(self, extension):
+        return extension in self.extensions
