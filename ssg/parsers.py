@@ -1,5 +1,5 @@
 from typing import List
-from pahtlib import Path
+from pathlib import Path
 
 class Parser(object):
     """docstring for Parser."""
