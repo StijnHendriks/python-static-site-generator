@@ -8,4 +8,4 @@ class Site(object):
         self.dest = Path(dest)
 
     def create_dir(self, path):
-        directory = self.dest / Path.relative_to(self.source)
+        directory = self.dest / path.relative_to(self.source)
