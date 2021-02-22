@@ -10,3 +10,7 @@ class Content(Mapping):
     def __init__(self, arg):
         super(Content, self).__init__()
         self.arg = arg
+
+    def load(self, cls, string):
+        _, fm, content = __regex.split(string, 2)
+        
