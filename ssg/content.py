@@ -11,6 +11,7 @@ class Content(Mapping):
         super(Content, self).__init__()
         self.arg = arg
 
-    def load(self, cls, string):
+    def load(cls, string):
         _, fm, content = __regex.split(string, 2)
-        
+        metadata = load(fm, Loader = FullLoader)
+        return cls(metadata, content)
